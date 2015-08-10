@@ -6,9 +6,9 @@ EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
-Title "USB I2C"
+Title "I2CU"
 Date "10 aug 2015"
-Rev "A"
+Rev "PRE-A"
 Comp "Bradford Embedded"
 Comment1 "(C) 2015 Andrew Bradford"
 Comment2 "Licensed under the CERN OHL v1.2"
