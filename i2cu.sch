@@ -314,6 +314,54 @@ F 3 "~" H 5050 6100 60  0000 C CNN
 	1    5050 6100
 	1    0    0    -1  
 $EndComp
+$Comp
+L HEADER-6PIN-2ROW J?
+U 1 1 55C9C4B4
+P 9450 4400
+F 0 "J?" H 9450 4600 60  0000 C CNN
+F 1 "HEADER-6PIN-2ROW" H 9450 4100 60  0000 C CNN
+F 2 "~" H 8950 4350 60  0000 C CNN
+F 3 "~" H 8950 4350 60  0000 C CNN
+	1    9450 4400
+	1    0    0    -1  
+$EndComp
+Text Label 8750 4450 0    60   ~ 0
+SDA
+Text Label 8850 4550 0    60   ~ 0
+SCL
+$Comp
+L GND #PWR?
+U 1 1 55C9C76D
+P 10300 4500
+F 0 "#PWR?" H 10150 4500 30  0001 C CNN
+F 1 "GND" H 10300 4375 40  0000 C CNN
+F 2 "~" H 10300 4500 60  0000 C CNN
+F 3 "~" H 10300 4500 60  0000 C CNN
+	1    10300 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 55C9C94E
+P 9350 6000
+F 0 "R?" H 9350 5925 40  0000 C CNN
+F 1 "15K" H 9350 6000 30  0000 C CNN
+F 2 "~" H 9350 5975 60  0000 C CNN
+F 3 "~" H 9350 5975 60  0000 C CNN
+	1    9350 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R?
+U 1 1 55C9C954
+P 9500 6000
+F 0 "R?" H 9500 5925 40  0000 C CNN
+F 1 "15K" H 9500 6000 30  0000 C CNN
+F 2 "~" H 9500 5975 60  0000 C CNN
+F 3 "~" H 9500 5975 60  0000 C CNN
+	1    9500 6000
+	0    -1   -1   0   
+$EndComp
 Connection ~ 7700 6200
 Wire Wire Line
 	7700 6500 7800 6500
@@ -405,16 +453,16 @@ Wire Wire Line
 	1850 5300 1900 5300
 Connection ~ 700  5500
 Wire Wire Line
-	750  5500 700  5500
+	700  5500 750  5500
 Connection ~ 700  5400
 Wire Wire Line
-	750  5400 700  5400
+	700  5400 750  5400
 Connection ~ 700  5300
 Wire Wire Line
-	750  5300 700  5300
+	700  5300 750  5300
 Connection ~ 700  5200
 Wire Wire Line
-	750  5200 700  5200
+	700  5200 750  5200
 Connection ~ 700  5100
 Wire Wire Line
 	750  5100 700  5100
@@ -422,4 +470,66 @@ Wire Wire Line
 	700  5000 700  5550
 Wire Wire Line
 	750  5000 700  5000
+Wire Wire Line
+	8950 4550 8850 4550
+Wire Wire Line
+	8850 4550 8850 4850
+Wire Wire Line
+	8850 4850 10050 4850
+Wire Wire Line
+	10050 4850 10050 4550
+Wire Wire Line
+	10050 4550 9950 4550
+Wire Wire Line
+	9950 4450 10150 4450
+Wire Wire Line
+	10150 4450 10150 4950
+Wire Wire Line
+	10150 4950 8750 4950
+Wire Wire Line
+	8750 4950 8750 4450
+Wire Wire Line
+	8750 4450 8950 4450
+Wire Wire Line
+	9750 6300 9750 4950
+Connection ~ 9750 4950
+Wire Wire Line
+	9850 6400 9850 4850
+Connection ~ 9850 4850
+Wire Wire Line
+	9000 6300 9750 6300
+Wire Wire Line
+	9000 6400 9850 6400
+Wire Wire Line
+	9950 4350 10300 4350
+Wire Wire Line
+	10300 4350 10300 4500
+Wire Wire Line
+	8950 4350 8650 4350
+Wire Wire Line
+	8650 4350 8650 5050
+Wire Wire Line
+	8650 5050 9650 5050
+Wire Wire Line
+	9650 5050 9650 5750
+Wire Wire Line
+	9650 5750 9150 5750
+Wire Wire Line
+	9150 5750 9150 6200
+Wire Wire Line
+	9150 6200 9000 6200
+Wire Wire Line
+	9350 5800 9350 5750
+Connection ~ 9350 5750
+Wire Wire Line
+	9500 5800 9500 5750
+Connection ~ 9500 5750
+Wire Wire Line
+	9350 6200 9350 6300
+Connection ~ 9350 6300
+Wire Wire Line
+	9500 6200 9500 6400
+Connection ~ 9500 6400
+Text Label 8650 4350 0    60   ~ 0
+VOUT
 $EndSCHEMATC
