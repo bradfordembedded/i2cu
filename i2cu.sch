@@ -118,12 +118,12 @@ $EndComp
 $Comp
 L CAP C?
 U 1 1 55C879F7
-P 3950 5850
-F 0 "C?" H 3950 5950 40  0000 L CNN
-F 1 "1U" H 3950 5800 40  0000 L CNN
-F 2 "~" H 3950 5850 60  0000 C CNN
-F 3 "~" H 3950 5850 60  0000 C CNN
-	1    3950 5850
+P 3850 5850
+F 0 "C?" H 3850 5950 40  0000 L CNN
+F 1 "0.1U" H 3850 5800 40  0000 L CNN
+F 2 "~" H 3850 5850 60  0000 C CNN
+F 3 "~" H 3850 5850 60  0000 C CNN
+	1    3850 5850
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -858,8 +858,6 @@ Wire Wire Line
 	6850 3100 6950 3100
 Connection ~ 6950 3100
 Wire Wire Line
-	3950 5950 3950 6050
-Wire Wire Line
 	4450 5600 3400 5600
 Connection ~ 3400 5600
 Wire Wire Line
@@ -895,12 +893,6 @@ Connection ~ 7900 2700
 Wire Wire Line
 	7900 3200 7450 3200
 Connection ~ 7900 3200
-Wire Wire Line
-	3950 5700 4200 5700
-Wire Wire Line
-	4200 5700 4200 5750
-Wire Wire Line
-	4200 5750 4450 5750
 $Comp
 L CAP C?
 U 1 1 55CC737F
@@ -915,9 +907,55 @@ $EndComp
 Wire Wire Line
 	3650 5950 3650 6000
 Wire Wire Line
-	3650 6000 3950 6000
-Connection ~ 3950 6000
+	3650 6000 4150 6000
 Wire Wire Line
 	3650 5700 3650 5600
 Connection ~ 3650 5600
+$Comp
+L CAP C?
+U 1 1 55CC75C4
+P 4000 5850
+F 0 "C?" H 4000 5950 40  0000 L CNN
+F 1 "0.1U" H 4000 5800 40  0000 L CNN
+F 2 "~" H 4000 5850 60  0000 C CNN
+F 3 "~" H 4000 5850 60  0000 C CNN
+	1    4000 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L CAP C?
+U 1 1 55CC75CA
+P 4150 5850
+F 0 "C?" H 4150 5950 40  0000 L CNN
+F 1 "0.1U" H 4150 5800 40  0000 L CNN
+F 2 "~" H 4150 5850 60  0000 C CNN
+F 3 "~" H 4150 5850 60  0000 C CNN
+	1    4150 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 5700 3850 5650
+Wire Wire Line
+	3850 5650 4300 5650
+Wire Wire Line
+	4300 5650 4300 5750
+Wire Wire Line
+	4300 5750 4450 5750
+Wire Wire Line
+	4000 5700 4000 5650
+Connection ~ 4000 5650
+Wire Wire Line
+	4150 5700 4150 5650
+Connection ~ 4150 5650
+Wire Wire Line
+	3850 5950 3850 6000
+Connection ~ 3850 6000
+Wire Wire Line
+	3950 6000 3950 6050
+Wire Wire Line
+	4000 6000 4000 5950
+Connection ~ 3950 6000
+Wire Wire Line
+	4150 6000 4150 5950
+Connection ~ 4000 6000
 $EndSCHEMATC
