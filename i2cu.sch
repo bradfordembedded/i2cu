@@ -8,7 +8,7 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "I2CU"
-Date "11 aug 2015"
+Date "13 aug 2015"
 Rev "PRE-A"
 Comp "Bradford Embedded"
 Comment1 "(C) 2015 Andrew Bradford"
@@ -581,7 +581,9 @@ Wire Wire Line
 Wire Wire Line
 	7700 6200 7800 6200
 Wire Wire Line
-	7700 5750 7700 6500
+	7700 5750 7700 6200
+Wire Wire Line
+	7700 6200 7700 6500
 Connection ~ 7650 5750
 Wire Wire Line
 	7650 5750 7650 5700
@@ -598,7 +600,13 @@ Connection ~ 7500 5750
 Wire Wire Line
 	7100 5800 7100 5750
 Wire Wire Line
-	7100 5750 7700 5750
+	7100 5750 7250 5750
+Wire Wire Line
+	7250 5750 7500 5750
+Wire Wire Line
+	7500 5750 7650 5750
+Wire Wire Line
+	7650 5750 7700 5750
 Wire Wire Line
 	7500 5750 7500 5800
 Wire Wire Line
@@ -606,9 +614,13 @@ Wire Wire Line
 Wire Wire Line
 	8400 6800 8400 6750
 Wire Wire Line
-	5650 6400 7800 6400
+	5650 6400 7100 6400
 Wire Wire Line
-	5650 6300 7800 6300
+	7100 6400 7800 6400
+Wire Wire Line
+	5650 6300 7250 6300
+Wire Wire Line
+	7250 6300 7800 6300
 Wire Wire Line
 	4400 6550 4450 6550
 Wire Wire Line
@@ -619,15 +631,21 @@ Connection ~ 2000 5950
 Connection ~ 2100 5750
 Connection ~ 2850 5000
 Wire Wire Line
-	2600 5000 3400 5000
+	2600 5000 2850 5000
 Wire Wire Line
-	2850 4950 2850 5050
+	2850 5000 3400 5000
+Wire Wire Line
+	2850 4950 2850 5000
+Wire Wire Line
+	2850 5000 2850 5050
 Wire Wire Line
 	1850 5000 2300 5000
 Wire Wire Line
 	3400 5750 3350 5750
 Wire Wire Line
-	3400 5000 3400 5750
+	3400 5000 3400 5600
+Wire Wire Line
+	3400 5600 3400 5750
 Wire Wire Line
 	3400 5950 3400 6000
 Wire Wire Line
@@ -637,20 +655,26 @@ Wire Wire Line
 Wire Wire Line
 	2100 5750 2250 5750
 Wire Wire Line
-	2100 5100 2100 6200
+	2100 5100 2100 5750
+Wire Wire Line
+	2100 5750 2100 6200
 Wire Wire Line
 	1850 5100 2100 5100
 Wire Wire Line
 	2000 5950 2250 5950
 Wire Wire Line
-	2000 5200 2000 6350
+	2000 5200 2000 5950
+Wire Wire Line
+	2000 5950 2000 6350
 Wire Wire Line
 	1850 5200 2000 5200
 Connection ~ 1900 5400
 Wire Wire Line
 	1850 5400 1900 5400
 Wire Wire Line
-	1900 5300 1900 5450
+	1900 5300 1900 5400
+Wire Wire Line
+	1900 5400 1900 5450
 Wire Wire Line
 	1850 5300 1900 5300
 Connection ~ 700  5500
@@ -669,7 +693,17 @@ Connection ~ 700  5100
 Wire Wire Line
 	750  5100 700  5100
 Wire Wire Line
-	700  5000 700  5550
+	700  5000 700  5100
+Wire Wire Line
+	700  5100 700  5200
+Wire Wire Line
+	700  5200 700  5300
+Wire Wire Line
+	700  5300 700  5400
+Wire Wire Line
+	700  5400 700  5500
+Wire Wire Line
+	700  5500 700  5550
 Wire Wire Line
 	750  5000 700  5000
 Wire Wire Line
@@ -677,7 +711,9 @@ Wire Wire Line
 Wire Wire Line
 	8850 2900 8850 3200
 Wire Wire Line
-	8850 3200 10050 3200
+	8850 3200 9850 3200
+Wire Wire Line
+	9850 3200 10050 3200
 Wire Wire Line
 	10050 3200 10050 2900
 Wire Wire Line
@@ -687,21 +723,31 @@ Wire Wire Line
 Wire Wire Line
 	10150 2800 10150 3300
 Wire Wire Line
-	10150 3300 8750 3300
+	10150 3300 9750 3300
+Wire Wire Line
+	9750 3300 8750 3300
 Wire Wire Line
 	8750 3300 8750 2800
 Wire Wire Line
 	8750 2800 8950 2800
 Wire Wire Line
-	9750 3300 9750 6300
+	9750 6300 9750 3650
+Wire Wire Line
+	9750 3650 9750 3300
 Connection ~ 9750 3300
 Wire Wire Line
-	9850 3200 9850 6400
+	9850 6400 9850 3850
+Wire Wire Line
+	9850 3850 9850 3200
 Connection ~ 9850 3200
 Wire Wire Line
-	9750 6300 9000 6300
+	9000 6300 9450 6300
 Wire Wire Line
-	9850 6400 9000 6400
+	9450 6300 9750 6300
+Wire Wire Line
+	9000 6400 9600 6400
+Wire Wire Line
+	9600 6400 9850 6400
 Wire Wire Line
 	9950 2700 10300 2700
 Wire Wire Line
@@ -737,7 +783,9 @@ Wire Wire Line
 Wire Wire Line
 	8250 3650 8300 3650
 Wire Wire Line
-	8250 2700 8250 3650
+	8250 2700 8250 3400
+Wire Wire Line
+	8250 3400 8250 3650
 Wire Wire Line
 	9400 3650 9750 3650
 Connection ~ 9750 3650
@@ -748,16 +796,24 @@ Connection ~ 8250 3400
 Wire Wire Line
 	8000 2700 8000 2750
 Wire Wire Line
-	8000 3000 8000 3150
+	8000 3000 8000 3100
 Wire Wire Line
-	6300 2900 6800 2900
+	8000 3100 8000 3150
+Wire Wire Line
+	6300 2900 6400 2900
+Wire Wire Line
+	6400 2900 6550 2900
+Wire Wire Line
+	6550 2900 6800 2900
 Wire Wire Line
 	6550 2950 6550 2900
 Connection ~ 6550 2900
 Wire Wire Line
 	6550 3200 6550 3250
 Wire Wire Line
-	6550 3250 6800 3250
+	6550 3250 6700 3250
+Wire Wire Line
+	6700 3250 6800 3250
 Wire Wire Line
 	6800 3250 6800 3100
 Wire Wire Line
@@ -766,16 +822,24 @@ Connection ~ 6700 3250
 Wire Wire Line
 	5700 3250 5700 3300
 Wire Wire Line
-	6500 2600 6500 2700
+	6500 2600 6500 2650
 Wire Wire Line
-	6500 2200 6500 2350
+	6500 2650 6500 2700
+Wire Wire Line
+	6500 2200 6500 2250
+Wire Wire Line
+	6500 2250 6500 2300
+Wire Wire Line
+	6500 2300 6500 2350
 Wire Wire Line
 	6500 2300 6800 2300
 Wire Wire Line
 	6800 2300 6800 2700
 Connection ~ 6500 2300
 Wire Wire Line
-	5700 2250 6500 2250
+	5700 2250 6000 2250
+Wire Wire Line
+	6000 2250 6500 2250
 Wire Wire Line
 	5700 2250 5700 2550
 Connection ~ 6500 2250
@@ -790,7 +854,9 @@ Connection ~ 6000 2250
 Wire Wire Line
 	5150 3000 5050 3000
 Wire Wire Line
-	5050 3000 5050 3200
+	5050 3000 5050 3150
+Wire Wire Line
+	5050 3150 5050 3200
 Wire Wire Line
 	5050 3600 5050 3650
 Wire Wire Line
@@ -809,7 +875,11 @@ Wire Wire Line
 	7900 3100 8000 3100
 Connection ~ 8000 3100
 Wire Wire Line
-	7900 2700 8300 2700
+	7900 2700 8000 2700
+Wire Wire Line
+	8000 2700 8250 2700
+Wire Wire Line
+	8250 2700 8300 2700
 Connection ~ 8000 2700
 Connection ~ 8250 2700
 Wire Wire Line
@@ -824,20 +894,36 @@ Wire Wire Line
 Wire Wire Line
 	2000 6350 4450 6350
 Wire Wire Line
-	9650 5750 9100 5750
+	9650 5750 9600 5750
+Wire Wire Line
+	9600 5750 9450 5750
+Wire Wire Line
+	9450 5750 9250 5750
+Wire Wire Line
+	9250 5750 9100 5750
 Connection ~ 9250 5750
 Connection ~ 9450 5750
 Connection ~ 9600 5750
 Wire Wire Line
-	5150 2800 4850 2800
+	5150 2800 4750 2800
 Wire Wire Line
-	4850 2800 4850 3900
-Wire Wire Line
-	4850 3900 6200 3900
-Wire Wire Line
-	6200 3900 6200 5800
-Wire Wire Line
-	6200 5800 5650 5800
+	6050 5800 5650 5800
 Text Notes 4600 2500 0    60   ~ 0
 GAIN OF 1.266\n4.096 V -> 5.188 V
+Text Label 6050 5800 2    60   ~ 0
+DAC1_OUT
+Wire Wire Line
+	5650 5700 6050 5700
+Wire Wire Line
+	5650 5600 6050 5600
+Wire Wire Line
+	5650 5900 6050 5900
+Text Label 6050 5900 2    60   ~ 0
+LED_I2C
+Text Label 6050 5700 2    60   ~ 0
+ADC1_IN
+Text Label 6050 5600 2    60   ~ 0
+GPIO
+Text Label 4750 2800 0    60   ~ 0
+DAC1_OUT
 $EndSCHEMATC
