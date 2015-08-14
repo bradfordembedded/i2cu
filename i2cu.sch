@@ -577,16 +577,12 @@ F 3 "~" H 4000 3650 60  0000 C CNN
 $EndComp
 Text Notes 3550 2500 0    60   ~ 0
 GAIN OF 1.266\n4.096 V -> 5.188 V
-Text Label 6050 5800 2    60   ~ 0
-DAC1_OUT
 Text Label 6050 5900 2    60   ~ 0
 LED_I2C
 Text Label 6050 5700 2    60   ~ 0
 ADC1_IN
 Text Label 6050 5600 2    60   ~ 0
 GPIO
-Text Label 3700 2800 0    60   ~ 0
-DAC1_OUT
 $Comp
 L R R?
 U 1 1 55CC6D22
@@ -743,8 +739,6 @@ Wire Wire Line
 	7700 6500 7800 6500
 Wire Wire Line
 	7700 6200 7800 6200
-Wire Wire Line
-	7700 5750 7700 6500
 Connection ~ 7650 5750
 Wire Wire Line
 	7650 5750 7650 5700
@@ -983,7 +977,7 @@ Connection ~ 9600 5750
 Wire Wire Line
 	4100 2800 3700 2800
 Wire Wire Line
-	6050 5800 5650 5800
+	5650 5800 6250 5800
 Wire Wire Line
 	5650 5700 6050 5700
 Wire Wire Line
@@ -1116,4 +1110,12 @@ Connection ~ 2850 5000
 Wire Wire Line
 	3050 4950 3050 5000
 Connection ~ 3050 5000
+Wire Wire Line
+	3700 2800 3700 4000
+Wire Wire Line
+	3700 4000 6250 4000
+Wire Wire Line
+	6250 4000 6250 5800
+Wire Wire Line
+	7700 5750 7700 6500
 $EndSCHEMATC
