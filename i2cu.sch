@@ -1136,4 +1136,6 @@ Wire Wire Line
 Wire Wire Line
 	6800 6200 6800 6500
 Connection ~ 6800 6500
+Text Label 6050 5800 2    60   ~ 0
+DAC1_OUT
 $EndSCHEMATC
