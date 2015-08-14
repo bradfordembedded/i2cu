@@ -8,7 +8,7 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "I2CU"
-Date "13 aug 2015"
+Date "14 aug 2015"
 Rev "PRE-A"
 Comp "Bradford Embedded"
 Comment1 "(C) 2015 Andrew Bradford"
@@ -1079,7 +1079,7 @@ L R R?
 U 1 1 55CC7C17
 P 8600 5050
 F 0 "R?" H 8600 4975 40  0000 C CNN
-F 1 "100" H 8600 5050 30  0000 C CNN
+F 1 "220" H 8600 5050 30  0000 C CNN
 F 2 "~" H 8600 5025 60  0000 C CNN
 F 3 "~" H 8600 5025 60  0000 C CNN
 	1    8600 5050
@@ -1087,25 +1087,12 @@ F 3 "~" H 8600 5025 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	8600 5300 8600 5250
+Text Label 8050 4800 0    60   ~ 0
+LED_I2C
+Text Notes 7550 5050 0    60   ~ 0
+GREEN 0603 LED\n35 mcd @ 20 mA\n2.0 V DROP @ 20 mA
 Wire Wire Line
 	8600 4850 8600 4800
-Text Label 8050 4350 0    60   ~ 0
-LED_I2C
-Text Notes 7500 4900 0    60   ~ 0
-35 mcd @ 20 mA\nGREEN 0603 LED\n2.0 V DROP @ 20 mA
-$Comp
-L R R?
-U 1 1 55CC7D94
-P 8600 4600
-F 0 "R?" H 8600 4525 40  0000 C CNN
-F 1 "47" H 8600 4600 30  0000 C CNN
-F 2 "~" H 8600 4575 60  0000 C CNN
-F 3 "~" H 8600 4575 60  0000 C CNN
-	1    8600 4600
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
-	8600 4400 8600 4350
-Wire Wire Line
-	8600 4350 8050 4350
+	8600 4800 8050 4800
 $EndSCHEMATC
