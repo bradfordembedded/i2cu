@@ -1138,4 +1138,10 @@ Wire Wire Line
 Connection ~ 6800 6500
 Text Label 6050 5800 2    60   ~ 0
 DAC1_OUT
+Wire Wire Line
+	5650 6050 5800 6050
+Wire Wire Line
+	5650 6150 5800 6150
+NoConn ~ 5800 6050
+NoConn ~ 5800 6150
 $EndSCHEMATC
