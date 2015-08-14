@@ -734,9 +734,8 @@ F 3 "~" H 8000 900 60  0000 C CNN
 	1    8000 900 
 	1    0    0    -1  
 $EndComp
-Connection ~ 7700 6200
 Wire Wire Line
-	7700 6500 7800 6500
+	6450 6500 7800 6500
 Wire Wire Line
 	7700 6200 7800 6200
 Connection ~ 7650 5750
@@ -750,12 +749,12 @@ Wire Wire Line
 	7100 6200 7100 6400
 Connection ~ 7250 5750
 Wire Wire Line
-	7250 5800 7250 5750
+	7250 5750 7250 5800
 Connection ~ 7500 5750
 Wire Wire Line
 	7100 5800 7100 5750
 Wire Wire Line
-	7100 5750 7700 5750
+	6800 5750 7700 5750
 Wire Wire Line
 	7500 5750 7500 5800
 Wire Wire Line
@@ -1117,5 +1116,24 @@ Wire Wire Line
 Wire Wire Line
 	6250 4000 6250 5800
 Wire Wire Line
-	7700 5750 7700 6500
+	7700 5750 7700 6200
+$Comp
+L R R?
+U 1 1 55CDC1B7
+P 6800 6000
+F 0 "R?" H 6800 5925 40  0000 C CNN
+F 1 "15K" H 6800 6000 30  0000 C CNN
+F 2 "~" H 6800 5975 60  0000 C CNN
+F 3 "~" H 6800 5975 60  0000 C CNN
+	1    6800 6000
+	0    -1   -1   0   
+$EndComp
+Connection ~ 7100 5750
+Text Label 6450 6500 0    60   ~ 0
+GPIO
+Wire Wire Line
+	6800 5750 6800 5800
+Wire Wire Line
+	6800 6200 6800 6500
+Connection ~ 6800 6500
 $EndSCHEMATC
