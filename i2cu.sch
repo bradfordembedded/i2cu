@@ -9,7 +9,7 @@ encoding utf-8
 Sheet 1 1
 Title "I2CU"
 Date "18 aug 2015"
-Rev "PRE-A"
+Rev "A"
 Comp "Bradford Embedded"
 Comment1 "(C) 2015 Andrew Bradford"
 Comment2 "Licensed under the CERN OHL v1.2"
