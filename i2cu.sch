@@ -8,7 +8,7 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "I2CU"
-Date "14 aug 2015"
+Date "18 aug 2015"
 Rev "PRE-A"
 Comp "Bradford Embedded"
 Comment1 "(C) 2015 Andrew Bradford"
@@ -1144,4 +1144,64 @@ Wire Wire Line
 	5650 6150 5800 6150
 NoConn ~ 5800 6050
 NoConn ~ 5800 6150
+$Comp
+L CAP C?
+U 1 1 55D2FA21
+P 1300 3800
+F 0 "C?" H 1300 3900 40  0000 L CNN
+F 1 "4.7N" H 1300 3750 40  0000 L CNN
+F 2 "~" H 1300 3800 60  0000 C CNN
+F 3 "~" H 1300 3800 60  0000 C CNN
+	1    1300 3800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R?
+U 1 1 55D2FA30
+P 1300 3950
+F 0 "R?" H 1300 3875 40  0000 C CNN
+F 1 "1M" H 1300 3950 30  0000 C CNN
+F 2 "~" H 1300 3925 60  0000 C CNN
+F 3 "~" H 1300 3925 60  0000 C CNN
+	1    1300 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L SHLD #PWR?
+U 1 1 55D2FA4E
+P 1000 4050
+F 0 "#PWR?" H 850 4050 30  0001 C CNN
+F 1 "SHLD" H 1000 3925 40  0000 C CNN
+F 2 "~" H 1000 4050 60  0000 C CNN
+F 3 "~" H 1000 4050 60  0000 C CNN
+	1    1000 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 55D2FA5D
+P 1600 4050
+F 0 "#PWR?" H 1450 4050 30  0001 C CNN
+F 1 "GND" H 1600 3925 40  0000 C CNN
+F 2 "~" H 1600 4050 60  0000 C CNN
+F 3 "~" H 1600 4050 60  0000 C CNN
+	1    1600 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 4050 1600 3800
+Wire Wire Line
+	1600 3800 1400 3800
+Wire Wire Line
+	1150 3800 1000 3800
+Wire Wire Line
+	1000 3800 1000 4050
+Wire Wire Line
+	1000 3950 1100 3950
+Connection ~ 1000 3950
+Wire Wire Line
+	1500 3950 1600 3950
+Connection ~ 1600 3950
+Text Notes 650  4350 0    60   ~ 0
+RUN SHLD AROUND EXTERIOR\nOF PCB FOR ESD PROTECTION
 $EndSCHEMATC
